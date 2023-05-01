@@ -1,0 +1,108 @@
+.calcbodyvertical{
+    height: 32vh;
+    width: 23vh;
+    border: solid;
+    border-color: #f5f5f5;
+    background-color: black;
+    position: fixed; top: 30vh;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center ;
+}
+.calcbodyhorizontal{
+    height: 32vh;
+    width: 62vh;
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    position: fixed; top: 65vh;
+    background-color: black;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #f5ebdc;
+}
+.screen{
+    width: 99.6%;
+    height: 50px;
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    border-style: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 1px;   
+    position: relative; bottom: 45px;
+}
+.screen2{
+    width: 99.6%;
+    height: 50px;
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    border-style: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 1px;
+    margin-bottom: 18px;
+}
+.buttonsnum{
+    margin: 10px;
+    height: 25px;
+    width: 25px;
+    padding-top: 5px;
+    border-radius: 05px;
+    background-color: gray;
+    color: white;
+}
+.buttonsadmin{
+    margin: 10px;
+    height: 25px;
+    width: 25px;
+    padding-top: 5px;
+    border-radius: 05px;
+    background-color: grey;
+    color: white;
+    justify-content: center;
+    font-size: xx-small;
+    align-content: center;
+    justify-items: center;
+}
+.buttonscalc{
+    margin: 10px;
+    height: 25px;
+    width: 25px;
+    margin-top: 5px;
+    border-radius: 05px;
+    background-color: orange;
+    color: white;
+}
+.buttonsspecial{
+    margin: 10px;
+    height: 25px;
+    width: 37px;
+    padding-top: 5px;
+    border-radius: 5px;
+    background-color: #0d1117;
+    color: white;
+    font-size: xx-small;
+    justify-items: left;
+    justify-content: left;
+}
+input{
+    justify-content: center;
+    align-items: center;
+}
+.test{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border: solid;
+    border-color:red
+        
+}
