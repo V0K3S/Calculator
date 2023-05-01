@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calcbodyvertical">
+        <div>
+            <input id="display" name="display" class="screen" type="text" placeholder="0">
+        </div>
+        <div>
+            <input class="buttonsadmin" type="button"value=AC onclick="display.value = ''">
+            <input class="buttonsadmin" type="button"value=DEL onclick="display.value = display.value.slice(0,-1)">
+            <input class="buttonsadmin" type="button"value=% onclick="display.value += '/100'">
+            <input class="buttonscalc" type="button"value='/' onclick="display.value += '/'">
+        </div>
+        <div>
+            <input class="buttonsnum" type="button"value=7 onclick="display.value += '7'">
+            <input class="buttonsnum" type="button"value=8 onclick="display.value += '8'">
+            <input class="buttonsnum" type="button"value=9 onclick="display.value += '9'">
+            <input class="buttonscalc" type="button"value=x onclick="display.value += '*'">
+        </div>
+        <div>
+            <input class="buttonsnum" type="button"value=4 onclick="display.value += '4'">
+            <input class="buttonsnum" type="button"value=5 onclick="display.value += '5'">
+            <input class="buttonsnum" type="button"value=6 onclick="display.value += '6'">
+            <input class="buttonscalc" type="button"value=- onclick="display.value += '-'">
+        </div>
+        <div>
+            <input class="buttonsnum" type="button"value=1 onclick="display.value += '1'">
+            <input class="buttonsnum" type="button"value=2 onclick="display.value += '2'">
+            <input class="buttonsnum" type="button"value=3 onclick="display.value += '3'">
+            <input class="buttonscalc" type="button"value=+ onclick="display.value += '+'">
+        </div>
+        <div>
+            <input style="width: 4vh;" class="buttonsnum" type="button"value=0 onclick="display.value += '0'">
+            <input class="buttonsnum" type="button"value=. onclick="display.value += '.'">
+            <input id="equalss" onclick="display.value = eval(display.value) " style="width: 8vh;" class="buttonscalc" type="button"value='='>
+        </div>
+    </div>
+    <div class="calcbodyhorizontal">
+        <div>
+            <input type="text" class="screen2" id="display2" name="display2" placeholder="0">
+        </div>
+        <div>
+            <input class="buttonsspecial" type="button" value="()" onclick="display2.value += '('">
+            <input class="buttonsspecial" type="button" value="()" onclick="display2.value += ')'"> 
+            <input class="buttonsspecial" type="button" value="mc">
+            <input class="buttonsspecial" type="button" value="m+">
+            <input class="buttonsspecial" type="button" value="m-">
+            <input class="buttonsspecial" type="button" value="mr">
+            <input class="buttonsadmin" type="button" value="AC" onclick="display2.value += ''">
+            <input class="buttonsadmin" type="button" value="DEL" onclick="display2.value = display2.value.slice(0,-1)">
+            <input class="buttonsadmin" type="button" value="%" onclick="display2.value += '/100'">
+            <input class="buttonscalc" type="button" value="/" onclick="display2.value += '/'">
+        </div>
+        <div>
+            <input class="buttonsspecial" type="button" value="2nd">
+            <input class="buttonsspecial" type="button" value="x^2" onclick="display2.value += '^2'">
+            <input class="buttonsspecial" type="button" value="x^3" onclick="display2.value += '^3'">
+            <input class="buttonsspecial" type="button" value="x^y" onclick="display2.value += '^'">
+            <input class="buttonsspecial" type="button" value="e^x" onclick="display2.value += 'e^'">
+            <input class="buttonsspecial" type="button" value="10^x" onclick="display2.value += '10^'">
+            <input class="buttonsnum" type="button" value="7" onclick="display2.value += '7'">
+            <input class="buttonsnum" type="button" value="8" onclick="display2.value += '8'">
+            <input class="buttonsnum" type="button" value="9" onclick="display2.value += '9'">
+            <input class="buttonscalc" type="button" value="X" onclick="display2.value += '*'">
+        </div>
+        <div>
+            <input class="buttonsspecial" type="button" value="1/x" onclick="display2.value += '1/'">
+            <input class="buttonsspecial" type="button" value="sqrX" onclick="math.sqrt(display2.value)">
+            <input class="buttonsspecial" type="button" value="crX">
+            <input class="buttonsspecial" type="button" value="YrtX">
+            <input class="buttonsspecial" type="button" value="ln">
+            <input class="buttonsspecial" type="button" value="logb10">
+            <input class="buttonsnum" type="button" value="4">
+            <input class="buttonsnum" type="button" value="5">
+            <input class="buttonsnum" type="button" value="6">
+            <input class="buttonscalc" type="button" value="-">
+        </div>
+        <div>
+            <input class="buttonsspecial" type="button" value="x!">
+            <input class="buttonsspecial" type="button" value="sin">
+            <input class="buttonsspecial" type="button" value="cos">
+            <input class="buttonsspecial" type="button" value="tan">
+            <input class="buttonsspecial" type="button" value="e">
+            <input class="buttonsspecial" type="button" value="EE">
+            <input class="buttonsnum" type="button" value="1">
+            <input class="buttonsnum" type="button" value="2">
+            <input class="buttonsnum" type="button" value="3">
+            <input class="buttonscalc" type="button" value="+">
+        </div>
+        <div>
+            <input class="buttonsspecial" type="button" value="Rad">
+            <input class="buttonsspecial" type="button" value="sinh">
+            <input class="buttonsspecial" type="button" value="cosh">
+            <input class="buttonsspecial" type="button" value="tanh">
+            <input class="buttonsspecial" type="button" value="pie">
+            <input class="buttonsspecial" type="button" value="Rand">
+            <input style="width: 4vh;" class="buttonsnum" type="button" value="0">
+            <input class="buttonsnum" type="button" value=".">
+            <input id="equals" style="width: 8vh;" class="buttonscalc" type="button" value="=" onclick="display2.value += eval(display2.value)">
+        </div>
+    </div>
+    <div id="test" class="test">
+        <p id="text" style="color: aquamarine;" >hello</p>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
