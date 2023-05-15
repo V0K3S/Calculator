@@ -1,2 +1,2 @@
 # Apple calculator 
-made an apple calculator using htm and css
+made an apple calculator using html and css
